@@ -1,4 +1,4 @@
-def Fahrenheit_to_Celsius(F):
-    return round((5 / 9) * (F - 32), 2)
-F = float(input('Fahrenheit to Celsius Converter: '))
-print(Fahrenheit_to_Celsius(F))
+def fahrenheit_to_celsius(f):
+    return round((5 / 9) * (f - 32), 2)
+f = float(input('Fahrenheit to Celsius Converter: '))
+print(fahrenheit_to_celsius(f))
