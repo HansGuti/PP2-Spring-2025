@@ -8,7 +8,7 @@ class Rectangle(Shape):
 
     def area(self):
         return self.length * self.width
-length = int(input('Enter the lenght of the rectangle: '))
+length = int(input('Enter the length of the rectangle: '))
 width = int(input('Enter the width of the rectangle: '))
 rectangle = Rectangle(length, width)
 print(f'The area of the rectangle is: {rectangle.area()}')
