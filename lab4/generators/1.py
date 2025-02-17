@@ -1,10 +1,9 @@
 def square_of_numbers(N):
-    count = 1
-    cnt = 1
+    for i in range(1, N + 1):
+        yield i ** 2
+
     
-    while count <= N:
-        yield count
-        cnt += 1
-        count = cnt ** 2
-for i in square_of_numbers(8): 
-    print(i)
+N = int(input('Enter: '))
+
+for x in square_of_numbers(N):
+    print(x)
