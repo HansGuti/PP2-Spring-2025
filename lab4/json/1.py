@@ -6,8 +6,8 @@ with open('sample-data.json', 'r') as file:
 
 print('Interface status')
 print('=' * 80)
-print(f'{"DN":<50} {"Description":<20} {"Speed":<10} {"MTU":<10}')
-print('-' * 80)
+print(f'{"DN":<50} {"Description":<20}  {"Speed":<10}{"MTU":<10}')
+print(f'{"-"*50} {"-"*20}  {"-"*6}   {"-"*6}')
     
 for i in data['imdata']:
     att = i['l1PhysIf']['attributes']
