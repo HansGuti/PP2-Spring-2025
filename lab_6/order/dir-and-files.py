@@ -51,7 +51,7 @@ import os
 
 def task3(path):
     if not os.path.exists(path):
-        return {  # ✅ Always return a dictionary, even if path does not exist
+        return {  
             'existence': False,
             'filename': '',
             'dirname': ''
@@ -63,10 +63,10 @@ def task3(path):
         'dirname': ''
     }
 
-    if os.path.isfile(path):  # ✅ If it's a file, set filename & dirname
+    if os.path.isfile(path):  
         res['filename'] = os.path.basename(path)
         res['dirname'] = os.path.dirname(path)
-    else:  # It's a directory
+    else:  
         res['dirname'] = os.path.abspath(path)
 
     return res
